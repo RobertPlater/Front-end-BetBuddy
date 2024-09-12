@@ -1,0 +1,47 @@
+<html>
+
+<head>
+    <link rel="stylesheet" href="css/indexBB.css">
+    <style></style>
+</head>
+    <body>
+        <div class="title"><b>BetBuddy</b></div>
+        <div class="breaddiv">
+                <div>
+                    <ul class="breadmenu" >
+                        <li><a href="BetBuddy\home.htm" target="iframe_a" onclick="displayLowMenu('OFF')" >Home |</a></li>
+                        <li><a href="BetBuddy\RaceTable\table.htm" target="iframe_a" onclick="displayLowMenu('OFF')">Race Table</a></li>
+                        <li><a href="BetBuddy\RaceCard\racecard.htm" target="iframe_a" onclick="displayLowMenu('OFF')">Race Card</a></li>
+                    </ul>
+                </div>     
+                <div class="bread" id="lower">
+                    <ul class="breadmenu" >
+                        <li><a href="RaceTable\football.htm" target="iframe_a">Football</a> > </li> 
+                        <li><a href="RaceTable\football\table.htm" target="iframe_a"> Table</a></li>
+                        <li><a href="RaceTable\football\scoresdiv.htm" target="iframe_a"> Scores & Fixtures</a></li>
+                    </ul>
+                </div>
+        </div>
+        <div>
+            <iframe src="BetBuddy\home.htm" name="iframe_a" frameborder="0" marginwidth="0" marginheight="0" margin-top: 0px; margin-bottom: 0px;
+            height="100%" width="100%" title="Iframe Body" ></iframe>
+        </div>
+        <script>
+            function displayLowMenu(flag){
+                var x = document.getElementById('lower');
+        
+                console.log('displayLowMenu(flag)')
+        
+                if(flag=='OFF'){
+                    x.style.display = "none";
+                    console.log('OFF')
+                }
+                if(flag=='ON'){
+                    x.style.display = "block";
+                    console.log('ON')
+                }
+            }
+        </script>
+    </body>
+</html>
+

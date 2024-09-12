@@ -1,0 +1,107 @@
+<link rel="stylesheet" href="css/pageCSS.css">
+
+<div style="height: 20px;"></div>
+<div id="pageTitle" class="sub-title-scores"><b>Tom's Selections</b></div>
+
+<div style="height: 5px"></div>
+
+<div style="height: 5px;"></div>
+<!-- Date Scroll Menu -->
+<div class="button-menu">
+    <div>
+        <button id="slideLeft" type="button" class="buttonA">
+            <span>
+                <svg width="20" height="20" viewBox="0 0 32 32">
+                    <path d="M3 16l26 16v-7.2L14.4 16 29 7.2V0z"></path>
+                </svg>
+            </span>
+        </button>
+
+    </div>
+    <div id="container" class="center-menu" style="text-align: center;">
+        <ul id="Navigation">
+            <li>
+                <a href="#about"><span><b>Today 222</b></span><span>11111</span></a>
+            </li>
+            <li>
+                <a href="#about"><span>Thur </span><span>12 Aug</span></a>
+            </li>
+            <li>
+                <a href="#about"><span>Fri </span><span>13 Aug</span></a>
+            </li>
+            <li>
+                <a href="#about"><span>Sat </span><span>14 Aug</span></a>
+            </li>
+            <li>
+                <a href="#about"><span>Sun </span><span>15 Aug</span></a>
+            </li>
+            <li>
+                <a href="#about"><span>Mon</span><span>16 Aug</span></a>
+            </li>
+            <li>
+                <a href="#about"><span>Tue </span><span>17 Aug </span></a>
+            </li>
+        </ul>
+    </div>
+
+    <div>
+        <button id="slideRight" type="button" class="buttonA">
+            <span>
+                <svg width="20" height="20" viewBox="0 0 32 32">
+                    <path d="M29 16L3 0v7.2L17.6 16 3 24.8V32z"></path>
+                </svg>
+            </span>
+        </button>
+    </div>
+</div>
+
+<table class="center">
+
+    <tr class="center">
+
+        <td colspan="2" style="text-align: center; background-color: white;">
+            <b>Linfield</b>
+        </td>
+    </tr>
+    <tr >
+        <td colspan="2" style="text-align: center; background-color: white;">
+            <b>Carlisle</b>
+        </td>
+    </tr>
+    <tr>
+        <td colspan="2" style="text-align: center; background-color: white;">
+            <b>Cork</b>
+        </td>
+    </tr>
+    <tr>
+        <td colspan="2" style="text-align: center; background-color: white;">
+            <b>Worcester</b>
+        </td>
+    </tr>
+    <tr>
+        <td colspan="2" style="text-align: center; background-color: white;">
+            Happy Valley
+        </td>
+    </tr>
+</table>
+
+<!-- Script -->
+<script>
+    const buttonRight = document.getElementById('slideRight');
+    const buttonLeft = document.getElementById('slideLeft');
+
+    buttonRight.onclick = function () {
+        container.scrollBy({
+            // top: 0,
+            left: +500,
+            behavior: 'smooth'
+        })
+    };
+    buttonLeft.onclick = function () {
+        container.scrollBy({
+            //top: 0,
+            left: -500,
+            behavior: 'smooth'
+        })
+    };
+</script>

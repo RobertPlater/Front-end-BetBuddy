@@ -1,4 +1,4 @@
-# FrontEnd-Dev-BetBuddy
+# FrontEnd Development: BetBuddy
 Betting game
 
 https://github.com/RobertPlater/Front-end-BetBuddy/blob/main/indexBB.htm
